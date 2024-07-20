@@ -1,11 +1,14 @@
 {
+  "homepage": "https://rahuddev.github.io/typescript-main",
   "name": "simple-ts-website",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "start": "lite-server"
+    "start": "lite-server",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
